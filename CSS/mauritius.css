@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;500;700&display=swap');
+/* CSS Document */
+body{
+    font-family: 'Advent pro',sans-serif;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.containe{
+	width:100%;
+	height: -100vh;
+	background-color:none;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.box{
+	width:300px;
+	height:300px;
+	background-color:none;
+	border-radius: 20px;
+	box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 20px 10px;
+}
+.model{
+	height: 350px;
+	max-height: 100%;
+	max-width: 100%;
+}
+.details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+.details p{
+	font-family: 'Advent Pro',sans-serif;
+	font-weight: bold;
+	color:#6a6a74;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.box:hover{
+	background-color: goldenrod;
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
+}
+
+/*--responsive for mobile phone--*/
+@media(max-width:720px){
+	.box{
+		width: 94%;
+		height: 500px;
+	}
+	.model{
+		height:250px;
+	}
+	.details p{
+		font-size: 16px;
+		width: 250px;
+	}
+	
+}
+
+/*footer code*/
+.footer{
+    width:100%;
+    background: #9da9ae;
+    display:block;
+    color:white;
+    font-family:'Advent Pro', sans-serif ;
+}
+.inner-footer{
+    width:95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-items{
+ width:25%;
+ padding:10px 20px;
+ box-sizing: border-box;
+ 
+}
+.footer h1{
+padding: 10px 0;
+font-size: 25px;
+color:white;
+}
+.footer-items p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+}
+.footer h2{
+    margin:10px 0;
+    color: white;
+    font-size: 25px;
+
+}
+.footer .border{
+    height: 2px;
+    width: 40px;
+    background:goldenrod;
+}
+.footer ul{
+    list-style: none;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.footer ul a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+}
+.footer ul a:hover{
+    color: goldenrod;
+
+}
+.footer ul li{
+    margin:10px 0;
+    height:25px;
+}
+.footer li i{
+    margin-right: 20px;
+}
+.footer .social-media{
+    width:100%;
+    text-align: center;
+    color: white;
+}
+
+.footer .social-media a {
+    text-decoration: none;
+
+
+}
+.footer .social-media i{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color:white;
+    
+}
+.footer .footer-bottom{
+    padding:10px;
+    color:white;
+    background: #9da9ae;
+    font-size: 12px;
+    
+}
+/*reponsive footer for desktop*/
+@media screen and (max-width:1085px){
+
+    .footer-items{
+        width: 50%;
+
+    }
+}
+/*reponsive footer for ipads and tablets*/
+@media screen and (max-width:1024px){
+   
+    .footer-items{
+        width: 30%;
+
+    }
+}
+/*reponsive footer for mobile*/
+@media screen and (max-width:600px){
+    .footer{width: 100%;}
+    .footer-items{
+        width: 100%;
+
+    }
+      /*making the gallery slideshow look better on smaller screens*/
+      .box{width: 250px; height: 250px;}
+}
+
+
+.covid{ margin:50px auto;}
+.covid h1{text-align: center; font-weight: bold; color:#ff9800; padding-bottom: 10px; text-transform: uppercase;}
+.covid h1::after{content: ''; background:#ff9800; display: block; height: 1px ; width: 170px; margin: 20px auto 5px;}
+.covid .row{margin-top: 30px;}
+.col-md-4{margin: 40px auto;}
+.profile{padding: 70px 10px 10px; background-color:none;}
+.profile img {top: -80px; position: absolute; left:calc(50% - 70px); border: none solid white;}
+.user{width: 142px; height: 147px; border-radius: 50%;}
+.profile h3{font-size: 1.2em; margin-top: 5px; color: gray; }
+.profile :hover{box-shadow: 0 0 15px 5px rgba(0, 0, 0.3, 0.3); cursor: pointer; transition: 0.4s;}
+.profile span{color: darkred; text-decoration: underline; font-size: .65em;}
+.profile a:link { background-color: transparent;text-decoration: none; }
+.container  .col-xl-5 a{text-decoration: none;}

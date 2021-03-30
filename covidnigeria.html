@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VALET</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/covidnigeria.css">
+</head>
+
+<body>
+
+    <!--ENTIRE PAGE IS CONTAINED IN A DIV -->
+    <div id="page">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+            <div class="container"><img src="../VALET/Images/VALET.png" style="width: 81px;height: 28px;"><a
+                    class="navbar-brand logo" href="#"></a><button data-toggle="collapse" class="navbar-toggler"
+                    data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1"
+                    style="font-family: 'Advent Pro', sans-serif; color: black;">
+                    <ul class="nav navbar-nav d-xl-flex ml-auto justify-content-xl-start">
+                        <li class="nav-item d-xl-flex" role="presentation"><a class="nav-link active" href="index.html"
+                                style="font-family: 'Advent Pro', sans-serif;color: black;">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="about.html"
+                                style="font-family: 'Advent Pro', sans-serif;color: black;">About Us</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                aria-expanded="false" href="#" style="color: black;">Countries&nbsp;</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                    href="mauritius.html">Mauritius</a><a class="dropdown-item" role="presentation"
+                                    href="nigeria.html">Nigeria</a><a class="dropdown-item" role="presentation"
+                                    href="uk.html">United Kingdom</a></div>
+                        </li>
+                    </ul><a class="text-dark border rounded-0 border-dark" data-bs-hover-animate="pulse"
+                        href="contact.html"
+                        style="font-family: 'Advent Pro', sans-serif;font-size: 12.8px;padding: 5px;">CONTACT US</a>
+                </div>
+            </div>
+<!--The below is for the nav bar drop down-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+            </script>
+
+        </nav>
+<br><br><br><br><br><br><br><br>
+
+
+        <h1>Covid-19 overview in Nigeria today</h1>
+        
+        <div class="card1" id="card">
+          <span><i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i> </span> 
+           <p>
+            active Cases <br>
+            <span id="active"></span>
+        </p></div>
+   
+   
+        <div id="card2" class="card">
+           <i class="fa fa-calculator"></i> 
+           <p>
+           Total Cases <br>
+           <span id="cases"></span>
+       </p></div>
+   
+       <div id="card7" class="card">
+        <i class="fa fa-calendar-times-o"></i>
+         <p>
+        Cases Today <br>
+         <span id="casestoday"></span>
+     </p></div>
+       <div  id="card3" class="card">
+           <i class="fa fa-hospital-o"></i>
+           <p>
+           Deaths <br>
+           <span id="deaths"></span>
+       </p></div>
+       <div class="card">
+        <i class="fa fa-hospital-o"></i>
+        <p>
+            Deaths Today<br>
+            <span id="deathstoday"></span>
+        </p>
+    </div>
+   
+       <div class="card" id="card4">
+           <i class="fa fa-close"></i>
+           <p>
+           Total tests <br>
+           <span id="tests"></span>
+       </p></div>
+   
+       <div id="card5" class="card">
+           <i class="fa fa-user-plus"></i>
+           <p>
+           Recoverd Cases <br>
+           <span id="recover"></span>
+       </p></div>
+       <div  class="card">
+        <i class="fa fa-calendar-check-o"></i>
+        <p>
+            Today Recovered <br>
+            <span id="todayRecovered"></span>
+        </p>
+    </div>
+
+       
+
+
+
+<script>
+
+//fetching data for nigeria only
+fetch(`https://corona.lmao.ninja/v2/countries/nigeria
+`)
+.then (response=>{
+    return response.json();
+}).then (data=>{
+    console.log(data);
+
+    document.getElementById('active').innerHTML=data.active;
+    document.getElementById('cases').innerHTML=data.cases;
+    document.getElementById('deaths').innerHTML=data.deaths;
+    document.getElementById('tests').innerHTML=data.tests;
+    document.getElementById('recover').innerHTML=data.recovered;
+    document.getElementById('todayRecovered').innerHTML = data.todayRecovered;
+    document.getElementById('casestoday').innerHTML=data.todayCases;
+    document.getElementById('deathstoday').innerHTML = data.todayDeaths;
+})
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

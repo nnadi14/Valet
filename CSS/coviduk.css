@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{text-align: center;  background-color: darkred;font-family: 'Advent Pro',sans-serif;font-size: 16px;color: gray;}
+h1{color: white;}
+
+.card{ width: 200px;height: 120px;background-color: white;float: left; margin: 50px; text-align: center; color: white;}
+.card1{ width: 200px;height: 120px;background-color: white;float: left;margin: 50px;  text-align: center; color: white; }
+.card p{color: gray;}
+.card1 p{color: gray;}
+.card span{font-size: 1.1em; margin-top: 40px;}
+i{font-size: 2em; margin-top: 30px; color: gray; align-content: center;}
+.card1 span{font-size: 1.1em; margin-top: 40px;}
+
+
+
+/* making the cards responsive for mobile*/
+@media screen and (max-width:650px){
+    .card{float: none; margin-left: 40px;}
+    .card1{float: none; margin-left: 40px;}
+    h1{text-align: left; margin-left: 10px;}
+    }
+    
+    
+
+

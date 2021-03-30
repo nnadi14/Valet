@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;500;700&display=swap');
+
+/* for body element*/
+body { font-family: 'Advent Pro',sans-serif; font-size: 16px; color: #555; margin:0; padding:0 }
+#page{max-width: 1200px; margin: 0 auto; position: relative;}
+/* for the h1 elements*/
+h1{margin: 0 0 1em 0;font-size: 2em;font-weight: 700;}
+h2{margin: 0 0 .5em 0;font-size: 1.5em;font-weight: 700; line-height: 1.1em;}
+h3{margin: 0 0 .5em 0;font-size: 1.5em;font-weight: 700; }
+h4{ margin: 0 0 1.5em 0;font-size:1em; font-weight: 700;}
+p{margin: 0 0 1em 0;}
+a{color: #007eff;}
+a:visited {color:rgba(0,0,0,0.3);}
+a.btn{ font-size: 1.2em; text-decoration: none; color:#fff; border:1px solid #fff ;padding: 4px 15px; transition:background-color .5s; }
+    a.btn:hover{background-color: rgba(0,0,0,0.3);
+    }
+    
+
+ /* sections*/
+ section{padding: 0 30px;}
+ section::after{ content:""; display:block;clear: both;
+
+}
+ /*main section*/
+ section.main{ margin-top: 20px; margin-bottom: 30px; padding: 0;}
+section.main aside{width: 33%;float:left;text-align: center;}
+section.main .content{margin:15px;background: no-repeat center top;background-size: 75px 75px;padding-top: 85px;}
+section.main aside h3 a{color:#000;text-decoration: none;}
+section.main aside h3 a:hover{text-decoration: underline;}
+section.main aside .content.trending{
+
+    background-image: url(../images/world.svg);
+}
+/*<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*/
+section.main aside .content.find-it{
+   /* <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*/
+    background-image: url(../images/virus.svg);
+}
+section.main aside .content.tools{
+
+    background-image: url(../images/travel.svg);
+}
+
+
+ 
+/* Section - Main 2*/
+section.main2{background-color:#E9EDEE; padding-top: 30px ; padding-bottom: 30px;color:grey;}
+    section.main2 article { padding: 0 20px 0 515px; background: url(../images/people.jpg) no-repeat 0 5px;  min-height: 220px;}
+ section.main2 article a.btn{color: grey;  border:1px solid grey;} 
+
+
+
+ /*testimonial*/
+ 
+ .testimonials{ margin:50px auto;}
+ .testimonials h1{text-align: center; font-weight: bold; color:goldenrod; padding-bottom: 10px; text-transform: uppercase;}
+ .testimonials h1::after{content: ''; background: goldenrod; display: block; height: 3px ; width: 170px; margin: 20px auto 5px;}
+.testimonials .row{margin-top: 30px;}
+.col-md-4{margin: 40px auto;}
+.profile{padding: 70px 10px 10px; background-color:#E9EDEE;}
+.profile img {top: -80px; position: absolute; left:calc(50% - 70px); border: 5px solid white;}
+.user{width: 142px; height: 147px; border-radius: 50%;}
+.profile h3{font-size: 1.2em; margin-top: 15px; color: gray;}
+span{font-size: 12px; color: gray;}
+blockquote{font-size: 1em; line-height: 25px;}
+blockquote::before{content:'\201c'; font-size: 40px; position: relative; color: goldenrod; line-height: 20px; bottom: -15px; right:5px}
+blockquote::after{content:'\201d'; font-size: 40px; position: relative; color: goldenrod; line-height: 20px; bottom: -15px; right:5px}
+.profile:hover{box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4); cursor: pointer; transition: 0.4s;}
+
+
+  
+/*footer code*/
+.footer{
+    width:100%;
+    background: #9da9ae;
+    display:block;
+    color:white;
+    font-family:'Advent Pro', sans-serif ;
+}
+.inner-footer{
+    width:95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-items{
+ width:25%;
+ padding:10px 20px;
+ box-sizing: border-box;
+ 
+}
+.footer h1{
+padding: 10px 0;
+font-size: 25px;
+color:white;
+}
+.footer-items p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+}
+.footer h2{
+    margin:10px 0;
+    color: white;
+    font-size: 25px;
+
+}
+.footer .border{
+    height: 2px;
+    width: 40px;
+    background:goldenrod;
+}
+.footer ul{
+    list-style: none;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.footer ul a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+}
+.footer ul a:hover{
+    color: goldenrod;
+
+}
+.footer ul li{
+    margin:10px 0;
+    height:25px;
+}
+.footer li i{
+    margin-right: 20px;
+}
+.footer .social-media{
+    width:100%;
+    text-align: center;
+    color: white;
+}
+
+.footer .social-media a {
+    text-decoration: none;
+
+
+}
+.footer .social-media i{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color:white;
+    
+}
+.footer .footer-bottom{
+    padding:10px;
+    color:white;
+    background: #9da9ae;
+    font-size: 12px;
+    
+}
+/*reponsive footer for desktop*/
+@media screen and (max-width:1085px){
+
+    .footer-items{
+        width: 50%;
+
+    }
+}
+/*reponsive footer for ipads and tablets*/
+@media screen and (max-width:1024px){
+   
+    .footer-items{
+        width: 30%;
+
+    }
+}
+/*reponsive footer for mobile*/
+@media screen and (max-width:600px){
+    .footer{width: 100%;}
+    .footer-items{
+        width: 100%;
+
+    }
+}
+
+
+
+@media screen and (max-width:625px){
+/*main*/
+
+section.main aside{width:100%; float: none ; text-align: left; padding-top: -300px;}
+section.main aside div.content{ margin: 8px 20px 8px 0; padding: 5px 0px 10px 85px; background-size: 45px 45px; background-position: 20px 5px ;}
+/*main2*/
+section.main2 article{
+    padding:205px 20px 0px 0px;
+    background-size: 300px auto;
+    min-height: initial;
+}
+
+/*for slideshow*/
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 270px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 75%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
